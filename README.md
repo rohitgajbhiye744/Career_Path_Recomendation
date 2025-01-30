@@ -80,3 +80,71 @@ Given the one-day timeline, focus on these essential features:
 - **Focus on Essential Functionality**: Do not worry about advanced features or complex design. Your goal is to get the system functional in the shortest time possible.
 
 Would you like me to help you set up the backend (e.g., Spring Boot project structure, APIs)?
+
+
+
+career-recommendation-system/
+│
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── careerrecommendation/
+│   │   │   │           ├── CareerRecommendationSystemApplication.java
+│   │   │   │           ├── controller/
+│   │   │   │           │   ├── AuthController.java
+│   │   │   │           │   ├── QuizController.java
+│   │   │   │           │   ├── RecommendationController.java
+│   │   │   │           │   ├── AdminController.java
+│   │   │   │           ├── model/
+│   │   │   │           │   ├── User.java
+│   │   │   │           │   ├── QuizResult.java
+│   │   │   │           │   └── CareerRecommendation.java
+│   │   │   │           ├── repository/
+│   │   │   │           │   ├── UserRepository.java
+│   │   │   │           │   ├── QuizResultRepository.java
+│   │   │   │           │   └── CareerRecommendationRepository.java
+│   │   │   │           ├── service/
+│   │   │   │           │   ├── AuthService.java
+│   │   │   │           │   ├── QuizService.java
+│   │   │   │           │   ├── RecommendationService.java
+│   │   │   │           │   └── AdminService.java
+│   │   │   │           ├── exception/
+│   │   │   │           │   ├── CustomException.java
+│   │   │   │           └── CareerRecommendationSystemApplication.java
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   └── static/
+│   │   │       └── css/
+│   │   │           └── styles.css
+│   │   └── └── templates/
+│   │       └── result.html
+│   ├── pom.xml
+│   └── .gitignore
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html                      <-- The main HTML file, with div for React mounting
+│   │   └── assets/                         <-- Static assets like images or icons
+│   ├── src/
+│   │   ├── components/                     <-- React components like Header, Footer, etc.
+│   │   │   ├── Header.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   │   ├── Quiz.js
+│   │   │   ├── Result.js
+│   │   │   └── Admin.js
+│   │   ├── App.js                          <-- Main React component (handles routing)
+│   │   ├── index.js                        <-- Entry point for React app
+│   │   ├── services/                       <-- API call services
+│   │   │   └── api.js                      <-- File for handling API requests (login, quiz, etc.)
+│   │   ├── styles/                         <-- Styling files for components
+│   │   │   └── App.css
+│   │   ├── App.css                         <-- Global CSS for the app
+│   ├── package.json                        <-- NPM dependencies file
+│   └── .gitignore                          <-- Git ignore file for frontend dependencies
+│
+├── README.md
+
